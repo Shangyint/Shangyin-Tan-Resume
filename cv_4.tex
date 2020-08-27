@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+\name{Shangyin Tan} % Your name
+\address{(+1) 765 - 427 - 2861\ \bf \\ tan279@purdue.edu \\ \url{https://github.com/Shangyint}} % Your phone number and email
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Purdue University} \hfill {\em 2018 - 2022} \\ 
+Bachelor of Science in Computer Science Honors \smallskip \\
+Overall GPA: 3.97/4.0, \ Major GPA: 4.0\\
+Corporate Partner Scholarship\\
+Graduate Courses: Algorithm, Programming Languages,
+Program Reasoning, Numerical Analysis
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Recent Projects}
+
+\begin{rSubsection}{Compiling Symbolic Execution}{May 2020 - Present}{\textit{Undergraduate Researcher} (advised by \href{http://continuation.passing.style/}{\texttt{Guannan Wei}} and \href{http://tiarkrompf.github.io/}{\texttt{Tiark Rompf}} )}{West Lafayette, US}
+\item \url{https://github.com/Kraks/sai}
+\item Build backend to generate SMT solver calls via metaprogramming.
+\item Develop \textbf{\it LLVM} symbolic compilation with free monads. 
+\item Our paper \textit{Compiling Symbolic Execution with Staging and Algebraic Effects}\\is conditionally accepted at \textbf{OOPSLA 2020}\ !
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{$\mathbf{W}^2$: Synthesising Webpage from Wireframe}{March 2020 - Present}{\textit{Undergraduate Researcher} (advised by \href{https://www.cs.purdue.edu/homes/roopsha/}{\texttt{Roopsha Samanta}})}{West Lafayette, US}
+\item \url{https://github.com/TigerHix/W2}
+\item Design an algorithm to infer hierarchical layout from static structure.
+\item Transform static graph to responsive webpage (HTML).
+
+\end{rSubsection}
+
+\begin{rSubsection}{MiniScala: a Small Scala Compiler}{Jan 2020 - May 2020}{\textit{Developer}}{West Lafayette, US}
+\item Parse and compile \textbf{Scala} source code to X86-64 assembly
+\item Infer and check types of the input program
+\item Optimize via Dead Code Elimination, Constant Folding, CPS Transformation, etc.
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\end{rSection}
+\begin{rSection}{Experience}
+\begin{rSubsection}{Undergraduate Teaching Assistant}{Jan 2019 - Present}{\textit{Discrete Math, System Programming, Algorithms Analysis, ...}}{West Lafayette, US}
+\item Conduct recitations to help students with problems
+\item Advise students in lab regarding debugging
+
+\end{rSubsection}
+\begin{rSubsection}{Selected Coding Contests}{2018 - 2020}{\it Higher Ranked Participant}{Midwest, US}
+\item $3^{rd}$ in Tech Challenge Google 2019, Chicago
+\item $2^{nd}$ in Sandia Coding Challenge 2018, West Lafayette
+
+\end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Familiar with & C, Scala, Python, C++ \\
+Have worked with & Haskell, Coq, X86-64, Java, Javascript, Scheme, \LaTeX, LLVM, MatLab\\
+Tools & GDB, Linux, Bash, Git, SAT/SMT solvers (Minisat, STP, Z3)
+
+
+\end{tabular}\\
+(Skills in the same row are in random order)
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%	Volunteering Activities and Projects
+%----------------------------------------------------------------------------------------
+
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
