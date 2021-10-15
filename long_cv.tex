@@ -23,7 +23,7 @@
 \documentclass{resume} % Use the custom resume.cls style
 \usepackage{apacite}
 
-
+\usepackage{enumitem}
 \usepackage{bibentry}
 \usepackage{hanging}
 \newcommand\publication[1]{%
@@ -32,9 +32,7 @@
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{hyperref}
 \name{Shangyin Tan} % Your name
-\address{(+1) 765 - 427 - 2861\ \bf \\ tan279@purdue.edu \\ \url{https://github.com/Shangyint}} % Your phone number and email
-
-
+\address{(+1) 765 - 427 - 2861\ \bf \\ tan279@purdue.edu \\ \url{https://shangyit.me}} % Your phone number and email
 
 \begin{document}
 \nobibliography{refs}
@@ -43,11 +41,11 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-
+\vspace{-6.0em}
 \begin{rSection}{Education}
 
 \begin{rSubsection}{Purdue University}{2018 - 2022}{\textit{Bachelor of Science in Computer Science Honors}}{West Lafayette, US}
-\item GPA: 3.97/4.0, \ Major GPA: 4.0
+\item GPA: 3.98/4.0, \ Major GPA: 4.0
 \item Corporate Partner Scholarship
 \item PurPL Undergraduate Researcher
 \item Graduate Courses: \it Algorithms, Programming Languages,
@@ -62,60 +60,66 @@ Program Reasoning, Numerical Analysis
 
 \begin{rSection}{Recent Projects}
 
-\begin{rSubsection}{Compiling Symbolic Execution}{May 2020 - Present}{\textit{Undergraduate Researcher} (advised by \href{http://continuation.passing.style/}{\texttt{Guannan Wei}} and \href{http://tiarkrompf.github.io/}{\texttt{Tiark Rompf}} )}{West Lafayette, US}
+\begin{rSubsection}{Compiling Symbolic Execution}{May 2020 - Present}{\textit{Undergraduate Research} (advised by \href{http://continuation.passing.style/}{\texttt{Guannan Wei}} and \href{http://tiarkrompf.github.io/}{\texttt{Tiark Rompf}} )}{West Lafayette, US}
 \item \url{https://github.com/Kraks/sai}
-\item Build backend to generate SMT solver calls via metaprogramming
-\item Develop \textbf{\it LLVM} symbolic compilation with free monads from scratch
-\item Our paper \textit{Compiling Symbolic Execution with Staging and Algebraic Effects} is accepted at \\ \textbf{OOPSLA 2020}\ ! 
+\item Compile efficient symbolic executions via multi-stage programming
+\item Build backend to generate SMT solver calls
+\item Lead the development of multiple \textit{LLVM} symbolic execution compilers
+\item Publications: \textbf{[OOPSLA 20]}, \textbf{[ESEC/FSE 21]}
+\item Submissions under review: \textbf{[PEPM 22]}, \textbf{[USENIX Security 22]}
 \end{rSubsection}
 
-%------------------------------------------------
+\begin{rSubsection}{Data-driven Inductive Invariants Inference}{Sep 2021 - Present}{\textit{Honors Research} (advised by \href{https://www.cs.purdue.edu/homes/bendy/}{\texttt{Benjamin Delaware}})}{West Lafayette, US}
+    \item Infer inductive invariants for recursive client programs
+    \item Develop a data-driven abductive reasoning tool for black-box library functions
+\end{rSubsection}
 
-\begin{rSubsection}{$\mathbf{W}^2$: Synthesising Webpage from Wireframe}{March 2020 - Aug 2020}{\textit{Undergraduate Researcher} (advised by \href{https://www.cs.purdue.edu/homes/roopsha/}{\texttt{Roopsha Samanta}})}{West Lafayette, US}
+\begin{rSubsection}{Interactive Program Syntehsis for TensorFlow}{July 2021 - Present}{\textit{Undergraduate Research} (advised by \href{https://tianyi-zhang.github.io/}{\texttt{Tianyi Zhang}})}{West Lafayette, US}
+    \item Design interactive interface for TensorFlow operation synthesis
+    \item Create tutorial and conduct user-studies
+\end{rSubsection}
+
+\begin{rSubsection}{$\mathbf{W}^2$: Synthesising Responsive Webpage from Wireframe}{March 2020 - Aug 2020}{\textit{Coruse Project} (advised by \href{https://www.cs.purdue.edu/homes/roopsha/}{\texttt{Roopsha Samanta}})}{West Lafayette, US}
 \item \url{https://github.com/TigerHix/W2}
 \item Design an algorithm to infer hierarchical layout from static structure
 \item Transform static graph to responsive webpage (HTML)
-
 \end{rSubsection}
 
-\begin{rSubsection}{MiniScala: a Small Scala Compiler}{Jan 2020 - May 2020}{\textit{Developer}}{West Lafayette, US}
-\item Parse and compile \textbf{Scala} source code to X86-64 assembly
+\begin{rSubsection}{MiniScala: a Small Scala Compiler}{Jan 2020 - May 2020}{\textit{Course Project}}{West Lafayette, US}
+\item Parse and compile \textit{Scala} source code to X86-64 assembly
 \item Infer and check types of the input program
 \item Optimize via Dead Code Elimination, Constant Folding, CPS Transformation, etc
 
-\end{rSubsection}
-
-\begin{rSubsection}{Gomuku Go}{July 2017}{\textit{Developer}}{Pittsburgh, US}
-\item Design and build a Gomuku game 
-\item Use Minimax algorithm to implement an AI player
 \end{rSubsection}
 
 %------------------------------------------------
 
 \end{rSection}
 
+\begin{rSection}{Papers under Review}
+    \begin{enumerate}
+        \item \bibentry{pepm2022}
+        \item \bibentry{us22}
+    \end{enumerate}
+\end{rSection}
 
 \begin{rSection}{Publication}
 \begin{enumerate}
-    \item \bibentry{10.1145/3428232}
+    \item \bibentry{DBLP:conf/sigsoft/0001TBR21}
+    \item \bibentry{DBLP:journals/pacmpl/WeiBTR20}
 \end{enumerate}
-
-
-
-
-
 
 
 
 \end{rSection}
 
 \begin{rSection}{Presentation}
-
-
-\textbf{PurPL Reading Group} \\
-\textit{Data types a la carte}\hfill Aug 2020\\
-\textit{A Lightweight Symbolic Virtual Machine for Solver-Aided Host Languages} \hfill Dec 2020
-
+\begin{enumerate}
+\item \textbf{SPLASH 2021 SIGPLAN Papers Track}\\
+\textit{Compiling Symbolic Execution with Staging and Algebraic Effects} \hfill Oct 2021
+\item \textbf{PurPL Reading Group} \\
+\textit{Data types a la carte}\hfill Aug 2020
+\end{enumerate}
 
 
 \end{rSection}
@@ -123,14 +127,16 @@ Program Reasoning, Numerical Analysis
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Student Volunteer}{Nov 2020}{}{}
+\begin{rSubsection}{Student Volunteer}{}{}{}
 \item SPLASH 2020: Review talk videos. Monitor Q\&A sessions.
+\item SPLASH 2021: Coordinate hybrid video and streaming devices
 
 
 \end{rSubsection}
-\begin{rSubsection}{Undergraduate Teaching Assistant}{Jan 2019 - Present}{\textit{Discrete Math, System Programming, Algorithms Analysis, ...}}{West Lafayette, US}
+\begin{rSubsection}{Undergraduate Teaching Assistant}{Jan 2019 - Jan 2021}{\textit{Discrete Math, System Programming, Algorithms Analysis, ...}}{West Lafayette, US}
 \item Conduct recitations to help students with problem solving
 \item Advise students in lab debugging
+\item Monitor online Q\&A forums like Piazza
 \end{rSubsection}
 
 \begin{rSubsection}{Selected Coding Contests}{2018 - 2020}{\it Higher Ranked Participant}{Midwest, US}
